@@ -63,7 +63,10 @@ body {
 /* Estilização dos botões estilo Linktree */
 .link-item {
     font-family: 'Outfit', sans-serif; /* Fonte alterada para Outfit */
-    display: block;
+    display: flex;                     /* Mudado para flex para alinhar o ícone */
+    justify-content: center;           /* Centraliza o texto e ícone horizontalmente */
+    align-items: center;               /* Centraliza verticalmente */
+    gap: 10px;                         /* Espaço perfeito entre o ícone e a palavra */
     background-color: #ffffff;
     color: #000000;
     text-decoration: none;
