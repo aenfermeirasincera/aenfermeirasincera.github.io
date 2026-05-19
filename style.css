@@ -1,0 +1,90 @@
+/* Reset básico de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Fundo em degradê amarelo e branco ocupando toda a tela */
+body {
+    background: linear-gradient(180deg, #ffffff 0%, #edf3f8 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+    color: #000000;
+}
+
+/* Container principal centralizado */
+.container {
+    width: 100%;
+    max-width: 580px;
+    text-align: center;
+}
+
+/* Estilização do Perfil */
+.profile {
+    margin-bottom: 32px;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #000000;
+    margin-bottom: 16px;
+}
+
+.profile h1 {
+    font-family: 'Oswald', sans-serif; /* Fonte alterada para Oswald */
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+}
+
+.profile p {
+    font-family: 'Roboto Slab', serif; /* Fonte alterada para Roboto Slab */
+    font-size: 0.95rem;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+/* Container dos botões */
+.links-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Estilização dos botões estilo Linktree */
+.link-item {
+    font-family: 'Outfit', sans-serif; /* Fonte alterada para Outfit */
+    display: block;
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 16px 24px;
+    border-radius: 30px;
+    border: 2px solid #000000;
+    box-shadow: 0 4px 0px #000000;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Efeito ao passar o mouse ou tocar */
+.link-item:hover {
+    background-color: #000000;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* Ajuste de clique para dar sensação de botão pressionado */
+.link-item:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0px #000000;
+}
